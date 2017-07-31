@@ -1,0 +1,8 @@
+1. 类可以直接相加。item1 + item2 : 类的成员变量一一相加。
+2. 赋给unsigned类型超出范围的值，是初始值对其表示范围总数取模后的余数。unsigned char c = -1,结果为255.
+   赋给signed类型超出范围的值，结果是为定义。
+3. declaration并不分配存储空间。但是extern i = 3就变成了definition，分配存储空间。在类中对declaration的值赋值会报错。
+4. 用NULL初始化和用0是一样的。新标准下尽量使用nullptr避免使用NULL。
+5. top-level const是指针本身不能改变，low-level const是指针指向的值不变。
+6. type alias 两种方法：typedef和using。
+7. 防止头文件重定义:#ifdef/#ifndef #define #endif.
